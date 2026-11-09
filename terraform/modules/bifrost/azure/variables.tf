@@ -229,3 +229,9 @@ variable "image_registry_credentials" {
   default   = []
   sensitive = true
 }
+
+variable "service_type" {
+  description = "Kubernetes Service type for AKS (ClusterIP, LoadBalancer, NodePort)."
+  type        = string
+  default     = "ClusterIP"
+}
